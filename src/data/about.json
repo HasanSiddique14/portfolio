@@ -1,0 +1,24 @@
+{
+  "title": "ABOUT ME",
+  "introduction": "Welcome, Player One! I'm a hardworking passionate full-stack developer who loves creating new worlds through code. I love learning new technologies and pushing the boundaries of what is possible within this technology universe!",
+"bio": "For me programming is an oppurtunity to create anything I can imagine. Since a young age building lego or k'nex allowed my imagination to run wild, to me coding is just another way to let that imagination run wild but this time with no limits. From building personal projects which will help automate tasks to building something meanigful which can change peoples lives, the possibilities are endless. Since I can remember I have always been super competitive, from playing video games with my friends to playing football, I have always loved a good challenge. Programming itches that compettitve itch for me, I love learning new things and really pushing myself out of my comfort zone.\n\n When I'm not deubugging like a zombie, I tend to find myuself looking for new challenges, testing my limits and exploring new things is something I love to do on a daily basis. One orf those challenging activities is hiking, connecting with nature and exploring the world is one way I like to unwind. If I'm not high up in a mountain you will definitely find me in the gym or on a football pitch. They say 'health is wealth' and sitting all day has never been something I have been a fan of. So for me trying new activities is a must!",
+  "skills": [
+    "React (ReactJS,Typescript,React Native)",
+    "JavaScript",
+    "Python (flask,django,pytorch,tensorflow,matplotlib)",
+    "hugging face",
+    "Node.js & Express",
+    "Database Management (SQL, MongoDB,PostgreSQL)",
+    "Java (kotlin, spring boot)",
+    "Machine learning",
+    "Artificial Intelligence",
+    "Git & Version Control",
+    "HTML & CSS",
+    "CI/CD pipelines",
+    "Citrix",
+    "GO",
+    "Cybersecurity",
+    "kubernetes",
+    "docker"
+  ]
+}

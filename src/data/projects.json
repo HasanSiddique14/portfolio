@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Bionic reading using Machine Learning",
+    "description": "For my final disserstation project i built a machine learning model which uses bionic reading techniques to help dyslexic individuals read more effectively. ",
+    "fullDescription": "Bionic reading is a recent technological advancement which has shown to help dyslexic individual read more effectively by 'bolding' certain letters within words, this allows the reader to focus on the 'bolded' letters and use them as an anchor to help read the rest of the word. For my final project I researched deeper into this topic to see which specific dyslexia it helps and carried out a number of research experiments to support this thesis. I went on to build a machine learning model which combines lexical analysis techniques such as text summarisation and keyword extraction to 'bold' the most important letters within a word. The text summarisation was carried out with the use of tokenization and the use of a pretrained model. The 'bold' letters were done my training the model on predefined datasets which existed, running these datasets through a number of different test sets, then finally using the result on individuals with dyslexia to see if it helped them read more effectively. Using the data, I retrained the model to be more effective and accurate. All data was collected and analysed using matplotlib to visualise the results. This model was then integrated with a basic frontend using react",
+    "image": "/images/Bionic_project.png",
+    "tags": ["TensorFlow", "python", "matplotlib", "NLP","transformers","pytorch","transformers","React","NodeJS"],
+    "features": [
+      "Using tensorflow and pytorch to build the model",
+      "Progressively training the model to be more effective using the data collected from the experiments",
+      "Using matplotlib to visualise the results of the experiments and the data collected",
+      "Using pretrained models and tokenization techniques for the text summarisation and keyword extraction",
+      "Integrated the model with a basic frontend using react to make it more user friendly and accessible"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Find a gamer",
+    "description": "Tinder like application for gamers to find other gamers to play with. Users can create profiles, swipe through potential gaming players with similar interests, and chat within the app.",
+    "fullDescription": "Using a combination of libraries from NodeJS, a mysql database and a frontend created via html/CSS and javascript I created a tinder like application for gamers to find gamers with similar ineterests. This acted like a web app, the user will sign up, enter their inetrests/stats on their favourite game. Users can then swipe left or right similar to tinder, if a match is made users can then begin chatting to each other, the messaging features were supported by XAMPP. The app main purpose is to provide a soluion for gamers who want to play with someone new or try increase their competitive horizons by pairing with someone with a similar skill level.",
+    "image": "/images/palz_project.png",
+    "tags": ["HMTL", "NodeJS", "MySQL", "XAMPP", "JavaScript"],
+    "features": [
+      "Tinder like interface for finding gaming partners",
+      "Secure user authentication and profile management",
+      "Real-time chat functionality using XAMPP",
+      "Matchmaking algorithm based on gaming interests and skill levels"
+    ]
+  }
+]

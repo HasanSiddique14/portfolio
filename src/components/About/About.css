@@ -1,0 +1,154 @@
+.about {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #0F0F0F;
+  scroll-snap-align: start;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .section-title {
+  font-size: 36px;
+  color: #8BC34A;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 195, 74, 0.3);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about.visible .about-content {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.introduction {
+  font-size: 18px;
+  color: #FF0000;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bio {
+  font-size: 14px;
+  color: #CCCCCC;
+  line-height: 1.8;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-title {
+  font-size: 24px;
+  color: #8BC34A;
+  margin-bottom: 25px;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.skill-badge {
+  background: linear-gradient(135deg, #FF0000, #CC0000);
+  color: #FFFFFF;
+  padding: 15px 12px;
+  border-radius: 6px;
+  border: 2px solid #FFFFFF;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier Prime', monospace;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+  cursor: default;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  background: linear-gradient(135deg, #FF3333, #FF0000);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .introduction {
+    font-size: 14px;
+  }
+
+  .bio {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .skills-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-badge {
+    padding: 10px 8px;
+    font-size: 9px;
+  }
+}

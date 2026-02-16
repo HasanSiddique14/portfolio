@@ -1,0 +1,115 @@
+.experience-card {
+  background-color: #1A1A1A;
+  border: 3px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card.experience {
+  border-left: 5px solid #FF0000;
+}
+
+.experience-card.qualification {
+  border-left: 5px solid #8BC34A;
+}
+
+.experience-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 0 20px rgba(139, 195, 74, 0.4), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 20px;
+  color: #8BC34A;
+  margin: 0 0 5px 0;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+}
+
+.experience-company {
+  font-size: 14px;
+  color: #FF0000;
+  margin: 5px 0;
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.experience-duration {
+  font-size: 12px;
+  color: #AAAAAA;
+  margin: 5px 0;
+  font-family: 'Courier Prime', monospace;
+  font-style: italic;
+}
+
+.experience-badge {
+  font-size: 32px;
+  margin-left: 20px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.experience-description {
+  font-size: 14px;
+  color: #CCCCCC;
+  line-height: 1.6;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    border-width: 2px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-badge {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .experience-title {
+    font-size: 16px;
+  }
+
+  .experience-company {
+    font-size: 12px;
+  }
+
+  .experience-duration {
+    font-size: 11px;
+  }
+
+  .experience-description {
+    font-size: 12px;
+  }
+}

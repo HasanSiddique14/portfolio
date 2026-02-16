@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "type": "experience",
+    "title": "Software Engineer",
+    "company": "American Express",
+    "duration": "09/2023 - Present",
+    "description": "Developed innovative automation solutions for existing manual for intranet/internet proxies leveraging kubectl, React, Node js, Java and python. Deployed multiple full stack application into production using CI/CD pipelines. For a more streamlined workflow, I integrated these applications with Github Actions workflow."
+  },
+  {
+    "id": 2,
+    "type": "experience",
+    "title": "Technology Intern",
+    "company": "American Express",
+    "duration": "07/2022 - 08/2022",
+    "description": "Contributed in the development of robust microservices using Spring boot(Maven),React(Typescript) and NodeJS. I also had the privilege to learn about infrastructure technologies such as Jenkins and Terraform, and how they are used to deploy microservices. Had direct contact with Product owners to understand the microservice requirements, using these meetings I created a fully functional backend using Spring boot which extended to a Cassandra Database. I also learnt how to use GO and managed to make two independent frontend to support these microservices, one using GO and the other using Typescript. "
+  },
+  {
+    "id": 3,
+    "type": "experience",
+    "title": "Server Handling/Consulting (Work Experience)",
+    "company": "FIS",
+    "duration": "07/2017 - 08/2017",
+    "description": "Worked as a server side handler for large scaleable projects. Within my time at FIS, I learnt the use of Citrix alongside database management and manipulation. Throughout this experience I was given the opputunity to learn the consultancy side of the company, this meant shadowing client calls and dealing with server side debugging issues."
+  },
+  {
+    "id": 4,
+    "type": "qualification",
+    "title": "BSc Computer Science",
+    "company": "Goldsmiths University Of London",
+    "duration": "2019 - 2023",
+    "description": "For my final year I chose AI, Machine Learning and cyber security as my optional modules. Successfully completed my degree, achieving a 1:1 in BSc Computer Science."
+  }
+]

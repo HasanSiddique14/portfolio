@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Landing from "./components/Landing/Landing";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience/Experience";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
+  const [showLanding, setShowLanding] = useState(true);
+
+  const handleStartClick = () => {
+    setShowLanding(false);
+    setTimeout(() => {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showLanding && <Landing onStartClick={handleStartClick} />}
+      {!showLanding && (
+        <>
+          <About />
+          <Projects />
+          <Experience />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

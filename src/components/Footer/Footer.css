@@ -1,0 +1,112 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
+  border-top: 3px solid #8BC34A;
+  padding: 40px 20px 20px;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 16px;
+  color: #8BC34A;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #CCCCCC;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #8BC34A;
+  transform: translateX(5px);
+  text-shadow: 0 0 10px rgba(139, 195, 74, 0.6);
+}
+
+.footer-bottom {
+  border-top: 2px solid #333333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 11px;
+  color: #888888;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px 15px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-title {
+    font-size: 12px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+  }
+
+  .footer-copy {
+    font-size: 9px;
+  }
+}
