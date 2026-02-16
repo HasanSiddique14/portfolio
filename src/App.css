@@ -3,5 +3,11 @@
   background-color: #0F0F0F;
   color: #FFFFFF;
   overflow-x: hidden;
+  cursor: url('https://img.icons8.com/?size=32&id=WbSA1BjDR1gY&format=png&color=000000') 10 0, auto;
 }
+
+button, a, [role="button"] {
+  cursor: url('https://img.icons8.com/?size=32&id=WbSA1BjDR1gY&format=png&color=000000') 10 0, auto;
+}
+
 

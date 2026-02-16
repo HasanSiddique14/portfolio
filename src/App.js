@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
+import CursorGame from "./components/CursorGame/CursorGame";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <CursorGame />
       {showLanding && <Landing onStartClick={handleStartClick} />}
       {!showLanding && (
         <>

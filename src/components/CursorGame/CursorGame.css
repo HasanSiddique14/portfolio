@@ -1,0 +1,73 @@
+.cursor-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.click-sparkle {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+}
+
+.sparkle {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #2EFF00, #1FBC14);
+  border-radius: 50%;
+  box-shadow: 0 0 12px #2EFF00, inset 0 0 8px rgba(46, 255, 0, 0.4);
+  animation: sparkleGlow 0.5s ease-out forwards;
+}
+
+@keyframes sparkleGlow {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.plus-ten {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2EFF00;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 0 0 8px #2EFF00, 0 0 16px #2EFF00;
+  font-family: "Arial Black", sans-serif;
+  animation: floatUp 0.5s ease-out forwards;
+  pointer-events: none;
+  letter-spacing: 1px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-40px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sparkle {
+    width: 16px;
+    height: 16px;
+  }
+}
